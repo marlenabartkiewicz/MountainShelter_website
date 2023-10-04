@@ -1,11 +1,10 @@
 function About() {
     return (
         <>
-            <div className="photo">
-                <h1>Tło</h1>
-            </div>
-            <h2>Schroniska Tatr Polskich / O serwisie</h2>
-            <p>Sam dokonaj oceny schronisk, a my pokażemy Ci, które jest najlepsze</p>
+            <h2>O serwisie</h2>
+            <p>Strona służy do oceny ogólnej schronisk w Tatrach Polskich. Możesz wystawić ocenę numeryczną -
+                automatycznie wyciągniemy z tego średnią.</p>
+            <p>Zachęcamy też do oceny tekstowej - komentarze mogą pomóc przyszłym turystom!</p>
         </>
     );
 }

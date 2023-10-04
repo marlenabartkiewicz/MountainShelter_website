@@ -1,5 +1,42 @@
-@import "./scss/_variables";
-@import "./scss/_mixins";
+@import "scss/settings/variables";
+@import "scss/settings/mixins";
+@import "scss/elements/navigations";
+@import "scss/elements/opening";
+@import "scss/elements/shelters";
+@import "scss/elements/contact";
+@import "scss/elements/footer";
+@import "scss/generic/grid";
 
-@import 'bootstrap/scss/bootstrap';
+//@import '../../../node_modules/bootstrap/scss/bootstrap/buttons';
+
+* {
+  box-sizing: border-box;
+  font-family: $font-gabarito;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.container {
+  width: 95vw;
+  margin: 0 auto;
+  }
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: $color-primary;
+  margin-left: 30px;
+}
+
+//@import '../../../node_modules/bootstrap/scss/bootstrap';
 
