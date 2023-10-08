@@ -1,15 +1,18 @@
-
 function Shelters() {
     return (
-        <div className="shelters">
-            <h1>Schroniska</h1>
-            <button type="button" className="btn btn-primary">Morskie Oko</button>
-            <img></img>
-            <h2>Murowaniec</h2>
-            <img></img>
-            <h2>Schronisko Ornak</h2>
-            <img></img>
-        </div>
+        <>
+            <div className="shelters">
+                <h2 id="shelters">Schroniska</h2>
+                <h3>Morskie Oko</h3>
+                <img></img>
+                <button type="button" className="btn btn-primary">Morskie Oko</button>
+                <img></img>
+                <h3>Murowaniec</h3>
+                <img></img>
+                <h3>Schronisko Ornak</h3>
+                <img></img>
+            </div>
+        </>
     )
 }
 

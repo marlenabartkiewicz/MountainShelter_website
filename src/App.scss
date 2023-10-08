@@ -7,11 +7,11 @@
 @import "scss/elements/footer";
 @import "scss/generic/grid";
 
-//@import '../../../node_modules/bootstrap/scss/bootstrap/buttons';
+//@import 'react-bootstrap/Button';
 
 * {
   box-sizing: border-box;
-  font-family: $font-gabarito;
+  font-family: $font-gabarito, sans-serif;
   text-decoration: none;
 }
 

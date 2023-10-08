@@ -7,7 +7,7 @@ function Navigation() {
                     <ul className="header__nav">
                         <li className="nav__element"><a href="#about" className="nav__link">O serwisie</a></li>
                         <li className="nav__element"><a href="#shelters" className="nav__link">Schroniska</a></li>
-                        <li className="nav__element"><a href="#shelters" className="nav__link">Oceń schronisko</a>
+                        <li className="nav__element"><a href="#" className="nav__link">Oceń schronisko</a>
                         </li>
                         <li className="nav__element"><a href="#contact" className="nav__link">Kontakt</a></li>
                     </ul>

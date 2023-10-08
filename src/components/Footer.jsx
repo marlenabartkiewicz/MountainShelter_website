@@ -1,9 +1,14 @@
 function Footer() {
     return (
-        <footer>
-            <h4>Copyright: Marlena Bartkiewicz 2023</h4>
-        </footer>
-    );
+        <>
+            <footer className="footer">
+                <div className="footer__container">
+                    <span className="footer__copy">© 2023 Copyright: Marlena Bartkiewicz 2023</span>
+                    <span className="footer__copy">All rights reserved</span>
+                </div>
+            </footer>
+        </>
+    )
 }
 
 
