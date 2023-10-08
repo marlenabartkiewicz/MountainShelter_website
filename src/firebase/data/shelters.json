@@ -1,0 +1,37 @@
+{
+  "morskie-oko": {
+    "fullName": "Schronisko Morskie Oko",
+    "isActive": true,
+    "capacity": 79,
+    "phones": ["+48 123 456 788", "+48 123 456 789"],
+    "website": "www.schroniskomorskieoko.pl",
+    "email": "schroniskomorskieoko@wp.pl",
+    "location": "Dolina Rybiego Potoku",
+    "address": "Skrytka pocztowa 201; 34-500 Zakopane",
+    "description": "Schronisko turystyczne położone nad Morskim Okiem, w Dolinie Rybiego Potoku w Tatrach Wysokich. Znajduje się na wysokości 1410 m n.p.m. na polodowcowym wale morenowym. Składa się z dwóch części: Starego Schroniska pochodzącego z XIX wieku i Nowego Schroniska, wybudowanego w 1908 roku przez Towarzystwo Tatrzańskie. Po remoncie kapitalnym w latach 1988–1992 schronisko dysponuje 79 miejscami noclegowymi: 36 w Nowym Schronisku (w pokojach 3-6 osobowych) oraz 43 w Starym Schronisku (w salach wieloosobowych: 13-, 14- i 16-osobowych)[1]. Posiada też restaurację i bar oraz mieści stację ratunkową TOPR. Budynek schroniska został w 1976 roku uznany za zabytkowy i jest prawnie chroniony. Schronisko jest zarządzane przez PTTK."    
+  },
+  
+  "murowaniec": {
+    "fullName": "Schronisko Murowaniec",
+    "isActive": true,
+    "capacity": 110,
+    "phones": ["+48 18 2012633", "+48 539 537 910"],
+    "website": "rezerwacje@murowaniec.com",
+    "email": "www.murowaniec.com",
+    "location": "Hala Gąsienicowa",
+    "address": "Skrytka pocztowa 193; 34-500 Zakopane",
+    "description": "Schronisko PTTK „Murowaniec” na Hali Gąsienicowej – obiekt noclegowy w Tatrach położony na wysokości 1500 m n.p.m., na Hali Gąsienicowej, od 2021 r. posiadający status schroniska[1][a]. Budynek jest własnością Polskiego Towarzystwa Turystyczno-Krajoznawczego i posiada obecnie 110 miejsc noclegowych w pokojach od 2- do 6-osobowych oraz w pokojach 10-osobowych[2]. Na terenie schroniska znajduje się dyżurka TOPR. Obiekt wpisany do rejestru zabytków pod nr A-1396/M z 12.12.2019"
+  },
+  
+  "hala-kondratowa": {
+    "fullName": "Schronisko na Hali Kondratowej",
+    "isActive": false,
+    "capacity": 20,
+    "phones": "+48 18 2019114",
+    "website": "www.halakondratowa.pl",
+    "email": "",
+    "location": "Hala Kondratowa",
+    "address": "Skrytka pocztowa 197; 34-500 Zakopane",
+    "description": "Schronisko PTTK na Hali Kondratowej im. Władysława Krygowskiego – schronisko turystyczne położone na Polanie Kondratowej w Tatrach Zachodnich, u stóp masywu Giewontu. Znajduje się na wysokości 1333 m n.p.m., na terenie byłej Hali Kondratowej. Jest to najmniejsze schronisko polskich Tatr (600 m³), dysponujące 20 miejscami w pokojach 6- i 8-osobowych. Zarządzane jest przez PTTK. Schronisko prowadzi przechowalnię nart, gospodę i bufet. 4 września 2023 r. schronisko zostało zamknięte z powodu prowadzonego remontu. Prace potrwać mają 2 lata. Ponowne otwarcie planowane jest przed sezonem letnim w 2025 r."
+  }
+}

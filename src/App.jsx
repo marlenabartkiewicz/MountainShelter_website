@@ -3,11 +3,11 @@ import {Route, Routes} from 'react-router-dom'
 import RootLayout from "./layouts/RootLayout.jsx";
 
 
-import Shelters from "./pages/Shelters.jsx";
-import NotFound from "./pages/Error/NotFound.jsx";
-import Contact from "./pages/Contact.jsx";
-import Shelter from "./pages/Shelter.jsx";
-import Home from "./pages/Home.jsx";
+import SheltersPage from "./pages/SheltersPage.jsx";
+import NotFoundPage from "./pages/Error/NotFoundPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+import ShalterPage from "./pages/ShalterPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import About from "./components/About.jsx";
 
 
@@ -17,14 +17,14 @@ function App() {
         <>
             <Routes>
                 <Route path="/" element={<RootLayout/>}>
-                    <Route index element={<Home/>}/>
+                    <Route index element={<HomePage/>}/>
                     <Route path="/about" element={<About/>}/>
                     <Route path="/shelters">
-                        <Route index element={<Shelters/>}/>
-                        <Route path=":id" element={<Shelter/>}/>
+                        <Route index element={<SheltersPage/>}/>
+                        <Route path=":id" element={<ShalterPage/>}/>
                     </Route>
-                    <Route path="/contact" element={<Contact/>}/>
-                    <Route path="*" element={<NotFound/>}/>
+                    <Route path="/contact" element={<ContactPage/>}/>
+                    <Route path="*" element={<NotFoundPage/>}/>
                 </Route>
             </Routes>
 

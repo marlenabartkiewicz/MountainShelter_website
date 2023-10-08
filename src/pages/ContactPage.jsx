@@ -1,6 +1,6 @@
 import ContactForm from "../components/ContactForm.jsx";
 
-function Contact() {
+function ContactPage() {
     return (
         <>
             <ContactForm/>
@@ -8,4 +8,4 @@ function Contact() {
     )
 }
 
-export default Contact;
+export default ContactPage;
