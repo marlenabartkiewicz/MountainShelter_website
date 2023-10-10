@@ -23,14 +23,10 @@ const SheltersPage = () => {
                     </>
                 )
             )
-
-
-           }
-
+            }
         </>
     )
 }
 
 export default SheltersPage
 
-// <Link to="/shelters/morskie-oko">Schronisko Morskie Oko</Link>

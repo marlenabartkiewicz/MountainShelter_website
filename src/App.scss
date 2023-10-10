@@ -1,43 +1,31 @@
-@import "scss/settings/variables";
-@import "scss/settings/mixins";
-@import "scss/elements/navigations";
-@import "scss/elements/opening";
-@import "scss/elements/shelters";
-@import "scss/elements/contact";
-@import "scss/elements/footer";
-@import "scss/generic/grid";
-@import "scss/elements/shelter";
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
 
-//@import 'react-bootstrap/Button';
 
-* {
-  box-sizing: border-box;
-  font-family: $font-gabarito, sans-serif;
-  text-decoration: none;
+
+// Bootstrap Overwrite
+
+#root {
+  height: 100vh;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+$font-family-sans-serif: "Gabarito", sans-serif !default;
+$body-font-weight: 400;
+$color-grey: #A5A5A5;
+$primary: #50854e;
+
+$body-bg: #e6e6e6;
+
+$gradient: linear-gradient(0deg, rgba(8, 50, 70, 0.25), rgba(255, 255, 255, 0));
 
 
-h2 {
-  font-size: 2.25rem;
-  font-weight: 300;
-}
+@import "./scss/elements/navigations";
+@import "./scss/elements/footer";
+@import "./scss/elements/contact";
+@import "./scss/settings/variables";
 
-.container {
-  width: 95vw;
-  margin: 0 auto;
-  }
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: $color-primary;
-  margin-left: 30px;
-}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-//@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+
 

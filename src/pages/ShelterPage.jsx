@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import firebase from "../firebase/firebase";
 import NotFoundPage from "./Error/NotFoundPage.jsx";
 
-function ShalterPage() {
+function ShelterPage() {
     const { id } = useParams()
 
     const [shelterData, setShelterData] = useState([])
@@ -28,4 +28,4 @@ function ShalterPage() {
     )
 }
 
-export default ShalterPage
+export default ShelterPage

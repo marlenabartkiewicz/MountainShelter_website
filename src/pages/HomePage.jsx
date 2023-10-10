@@ -6,9 +6,10 @@ function HomePage() {
             <h1>
                 Home Subpage
             </h1>
+
             <DataUploader />
         </>
     )
 }
 
-export default HomePage
+export default HomePage;

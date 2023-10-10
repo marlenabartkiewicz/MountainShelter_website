@@ -23,7 +23,7 @@
     }
 
     &__link {
-      color: $color-grey;
+      color: #4f4f4f;
       font-weight: 700;
       font-size: 0.6875rem;
       text-transform: uppercase;
@@ -32,35 +32,37 @@
       letter-spacing: 0.1875rem;
 
       &:hover {
-        color: $color-black;
-        border-color: $color-primary;
+        color: rgb(36, 36, 36);
+        border-color: #50854e;
       }
     }
   }
 
   &__nav {
     display: flex;
-
-    @include mobile {
-      position: absolute;
-      left: 0;
-      top: 95px;
-      flex-direction: column;
-      background-color: white;
-      width: 100%;
-      padding-bottom: 20px;
-      display: none;
-
-      .nav__element {
-        padding: 0;
-      }
-
-      .nav__link {
-        display: block;
-        padding: 14px 20px;
-      }
-    }
   }
+}
+
+  //  @include mobile {
+  //    position: absolute;
+  //    left: 0;
+  //    top: 95px;
+  //    flex-direction: column;
+  //    background-color: white;
+  //    width: 100%;
+  //    padding-bottom: 20px;
+  //    display: none;
+  //
+  //    .nav__element {
+  //      padding: 0;
+  //    }
+  //
+  //    .nav__link {
+  //      display: block;
+  //      padding: 14px 20px;
+  //    }
+  //  }
+  //}
 
   //.menu {
   //  &__btn {
@@ -114,4 +116,3 @@
   //    }
   //  }
   //}
-}
