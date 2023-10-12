@@ -1,0 +1,41 @@
+.rank {
+  border: solid 1px #ccc;
+  width: 130px;
+
+  &__result {
+    font-size: $rank-font-size;
+    width: 80%;
+    color: #f6fcdc;
+    line-height: 3rem;
+    background-color: $primary;
+    border-radius: 20px;
+  }
+
+  &__votes {
+    color: #7d7d7d;
+    font-size: $rank-votes-font-size;
+
+    img{
+      opacity: 50%;
+    }
+  }
+
+  &__stars {
+    display: inline-flex;
+    flex-direction: row-reverse;
+
+    div {
+      height: fit-content;
+      width: fit-content;
+      cursor: pointer;
+      color: #d8d8d8;
+      line-height: 2rem;
+      font-size: $rank-star-size;
+    }
+
+    div:hover,
+    div:hover ~ div {
+      color: $rank-star-color;
+    }
+  }
+}

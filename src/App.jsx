@@ -21,7 +21,11 @@ function App() {
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/shelters">
                         <Route index element={<SheltersPage/>}/>
-                        <Route path=":id" element={<ShelterPage/>}/>
+                        <Route path=":shelterID" element={<ShelterPage/>}/>
+                    </Route>
+                    <Route path="/rating">
+                        <Route index element={<SheltersPage/>}/>
+                        <Route path=":shelterID" element={<ShelterPage/>}/>
                     </Route>
                     <Route path="/contact" element={<ContactPage/>}/>
                     <Route path="*" element={<NotFoundPage/>}/>

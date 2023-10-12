@@ -15,13 +15,20 @@ $primary: #50854e;
 
 $body-bg: #e6e6e6;
 
-$gradient: linear-gradient(0deg, rgba(8, 50, 70, 0.25), rgba(255, 255, 255, 0));
+$rank-star-color: #ff7c18;
+$rank-font-size: 2.5em;
+$rank-votes-font-size: 1em;
+$rank-star-size: 1.8em;
+
+
 
 
 @import "./scss/elements/navigations";
 @import "./scss/elements/footer";
 @import "./scss/elements/contact";
 @import "./scss/settings/variables";
+@import "./scss/elements/rank";
+@import "./scss/elements/home";
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

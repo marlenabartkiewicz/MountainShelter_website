@@ -18,9 +18,7 @@ const SheltersPage = () => {
                 Shelters Subpage
             </h1>
             {Object.entries(sheltersData).map(([shelterID, shelterName]) => (
-                    <>
-                        <Link to={`/shelters/${shelterID}`}><Shelter shelterName={shelterName}/></Link>
-                    </>
+                    <Link key={shelterID} to={`/shelters/${shelterID}`}><Shelter shelterName={shelterName}/></Link>
                 )
             )
             }

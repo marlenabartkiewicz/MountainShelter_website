@@ -1,15 +1,15 @@
-import { useParams } from "react-router-dom"
+import {useNavigate, useParams} from "react-router-dom"
 import {useEffect, useState} from "react";
 import firebase from "../firebase/firebase";
 import NotFoundPage from "./Error/NotFoundPage.jsx";
+import Rank from "../components/Rank.jsx";
 
 function ShelterPage() {
-    const { id } = useParams()
-
+    const { shelterID } = useParams()
     const [shelterData, setShelterData] = useState([])
 
     const fetchPost = () => {
-        firebase.getSingleShelter(id).then((result) => setShelterData(result), console.log('ERROR'))
+        firebase.getSingleShelter(shelterID).then((result) => setShelterData(result))
         console.log(shelterData)
     }
 
@@ -17,13 +17,18 @@ function ShelterPage() {
         fetchPost();
     }, [])
 
+    const navigate = useNavigate();
+
+
     return (
         <>
             <h1>
-                Shelter: {id}
+                {shelterData["fullName"]}
             </h1>
             Pełna nazwa: {shelterData ? shelterData["fullName"] : <NotFoundPage/>}
             Ilość miejsc: {shelterData ? shelterData["capacity"]: ""}
+            <Rank shelterID={shelterID}/>
+            <button className="btn btn-primary" type="submit" onClick={() => navigate(-1)}>Wstecz</button>
         </>
     )
 }
