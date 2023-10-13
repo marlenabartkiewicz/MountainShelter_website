@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
 
-
-
 // Bootstrap Overwrite
 
 #root {
   height: 100vh;
+
 }
 
 $font-family-sans-serif: "Gabarito", sans-serif !default;
@@ -22,6 +21,7 @@ $rank-star-size: 1.8em;
 
 
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "./scss/elements/navigations";
 @import "./scss/elements/footer";
@@ -29,9 +29,11 @@ $rank-star-size: 1.8em;
 @import "./scss/settings/variables";
 @import "./scss/elements/rank";
 @import "./scss/elements/home";
+@import "./scss/elements/about";
+@import "./scss/elements/comments";
+@import "./scss/elements/shelters";
 
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 

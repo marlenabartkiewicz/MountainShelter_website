@@ -11,7 +11,7 @@ import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 
 
-function App() {
+const App = () => {
 
     return (
         <>

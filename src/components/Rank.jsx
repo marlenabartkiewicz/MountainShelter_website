@@ -10,31 +10,29 @@ function Rank({ shelterID }) {
 
     useEffect(() => {
         updateRank()
-    });
+    })
 
     const calculateAvgRank = (ranksArray) => {
-        const avgRank = ranksArray.reduce((a, b) => a + b, 0) / ranksArray.length;
-        return avgRank;
-    };
+        if (ranksArray.length > 0) {
+            return ranksArray.reduce((a, b) => a + b, 0) / ranksArray.length
+        }
+        return 0
+    }
 
-    const updateRank = () => {
-        firebase
-            .getShelterRank(shelterID)
-            .then((result) => {
-                console.log("R", result)
-                setCurrentRank(calculateAvgRank(result.ranks))
-                setCurrentVotes(result.ranks.length)
-            }).catch((error) => { console.error(error) })
-    };
+    const updateRank = async () => {
+        const shelterRanks = await firebase.getShelterRanks(shelterID)
+        setCurrentRank(calculateAvgRank(shelterRanks))
+        setCurrentVotes(shelterRanks.length)
+    }
 
-    const handleStarClick = (event) => {
+    const handleStarClick = async (event) => {
         if (!starClicked) {
-            console.log(event.target.getAttribute("rank"));
             const rank = Number(event.target.getAttribute("rank"));
-            firebase.addShelterRank(shelterID, rank).then(() => updateRank()).catch((error) => { console.error(error) })
+            await firebase.addShelterRank(shelterID, rank)
+            await updateRank()
             setStarClicked(true)
         }
-    };
+    }
 
     return (
         <>

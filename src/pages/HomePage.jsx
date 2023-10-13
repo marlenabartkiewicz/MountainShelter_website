@@ -3,20 +3,18 @@ import {Link} from "react-router-dom";
 function HomePage() {
     return (
         <>
-
-            <section className="w-100 h-100">
-                <div className="bg-container position-relative"></div>
-                <div className="text-overlay text-center text-black">
-                    <h2> Schroniska w Tatrach Polskich </h2>
-                    <h3>Sprawdź i oceń</h3>
-                    <Link to="/shelters">
-                        <button className="btn btn-primary">
-                            Sprawdź
-                        </button>
-                    </Link>
+            <div className="header-container">
+                <div className="header-container__text-wrapper">
+                    <div className="header-container__text d-flex flex-column justify-content-center align-items-center">
+                        <h3> Schroniska w Tatrach Polskich </h3>
+                        <Link to="/shelters">
+                            <button className="btn btn-primary text-white">
+                                Sprawdź i oceń
+                            </button>
+                        </Link>
+                    </div>
                 </div>
-            </section>
-
+            </div>
         </>
     )
 }

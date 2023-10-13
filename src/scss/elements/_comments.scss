@@ -1,0 +1,45 @@
+.comment-card {
+  //background: #fff;
+  border-width: $border-width;
+  border-color: $border-color-translucent;
+  border-radius: $border-radius;
+  border-style:solid;
+  box-sizing: border-box;
+  //box-shadow: 0 2px 4px rgba(101, 99, 99, 0.204);
+  position: relative;
+  overflow: hidden;
+  min-height: fit-content;
+
+  &:before {
+    z-index:1;
+    font-family: Georgia, serif;
+    content: "”";
+    position: absolute;
+    top: 98px;
+    line-height: 100px;
+    right: -32px;
+    font-size: 25em;
+    color: $gray-200;
+    opacity: 0.45;
+    font-weight: normal;
+  }
+
+  p {
+    z-index:2;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__date {
+    z-index:2;
+    margin-bottom: 1rem;
+    font-size: 0.875em;
+    color: #8d8d8d;
+
+    svg{
+      //Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.
+      fill: #8d8d8d;
+      margin-top: -3px;
+    }
+  }
+}

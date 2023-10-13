@@ -1,27 +1,30 @@
-import {Link} from 'react-router-dom'
-import Shelter from "../components/Shelter.jsx";
+import ShelterCard from "../components/ShelterCard.jsx";
 import {useEffect, useState} from 'react'
 import firebase from '../firebase/firebase'
 
 
 const SheltersPage = () => {
+    const [allSheltersData, setAllSheltersData] = useState({});
 
-    const [sheltersData, setSheltersData] = useState([]);
+    const getAllSheltersData = async () => {
+        const allSheltersData = await firebase.getAllSheltersData()
+        setAllSheltersData(allSheltersData)
+    }
 
     useEffect(() => {
-        firebase.getAllSheltersID().then(result => setSheltersData(result))
-    }, [])
+        getAllSheltersData()
+    }, []);
 
     return (
         <>
-            <h1>
-                Shelters Subpage
-            </h1>
-            {Object.entries(sheltersData).map(([shelterID, shelterName]) => (
-                    <Link key={shelterID} to={`/shelters/${shelterID}`}><Shelter shelterName={shelterName}/></Link>
-                )
-            )
-            }
+            <h2 className="text-center">Schroniska w Tatrach Polskich</h2>
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+                {
+                    Object.entries(allSheltersData).map(([shelterID, shelterData]) => (
+                        <ShelterCard key={shelterID} shelterID={shelterID} shelterData={shelterData}/>
+                    ))
+                }
+            </div>
         </>
     )
 }

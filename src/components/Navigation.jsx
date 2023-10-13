@@ -22,10 +22,8 @@ function Navigation() {
                                 <Link to="/shelters" className="nav-link nav__link">Schroniska</Link>
                             </li>
                             <li className="nav__element">
-                                <Link to="/rating" className="nav-link nav__link">Oceń schronisko</Link>
+                                <Link to="/contact" className="nav-link nav__link">Kontakt</Link>
                             </li>
-                            <li className="nav__element">
-                                <Link to="/contact" className="nav-link nav__link">Kontakt</Link></li>
                         </ul>
                     </div>
                 </div>

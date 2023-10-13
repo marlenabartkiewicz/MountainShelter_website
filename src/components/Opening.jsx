@@ -1,4 +1,4 @@
-import background from '../assets/background.jpg';
+import background from '../assets/about-background.jpg';
 
 function Opening() {
     return (

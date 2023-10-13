@@ -1,5 +1,9 @@
-label {
+.input-field {
   color: $primary;
+  border-radius: 8px;
+  border-width: 1.5px;
+  border-color: $primary;
+  box-shadow: 0.3px 0.3px 20px 1px rgba(66, 68, 90, 0.51);
 
 }
 
@@ -9,7 +13,7 @@ label {
 
 textarea {
   height: 100px;
-  border-radius: 8px;
+
 }
 
 input {
