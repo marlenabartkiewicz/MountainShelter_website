@@ -8,7 +8,7 @@ function RootLayout() {
         <>
             <div className="container-fluid h-100">
                 <div className="row h-100">
-                    <div className="h-100 d-flex flex-column gx-0 overflow-auto">
+                    <div className="h-100 d-flex flex-column gx-0 overflow-y-auto overflow-x-hidden">
                         <div className="row">
                             <header>
                                 <Navigation />
