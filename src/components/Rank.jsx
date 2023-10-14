@@ -1,6 +1,5 @@
 import firebase from "../firebase/firebase";
 import { useState, useEffect } from "react";
-
 import user from "../assets/icon-user.png"
 
 function Rank({ shelterID }) {
@@ -36,14 +35,15 @@ function Rank({ shelterID }) {
 
     return (
         <>
-            <div className="d-flex flex-column pb-1 pt-2 rank">
+            <div className="d-flex flex-column pb-1 pt-2 rank bg-light">
                 <div className="d-flex justify-content-center align-items-center">
                     <div className="rank__result d-flex justify-content-center align-items-center">
                         {currentRank.toFixed(2)}
                     </div>
                 </div>
                 <div className="rank__votes d-flex justify-content-center align-items-center">
-                    <img src={user} />{currentVotes}
+                    <img src={user} />
+                    {currentVotes}
                 </div>
 
                 {!starClicked ?

@@ -1,5 +1,6 @@
 .image-box {
   height: 200px;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -8,4 +9,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.text-desc {
+  font-size: 0.8em;
 }

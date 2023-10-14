@@ -6,7 +6,7 @@ import telephone from "../assets/telephone.png";
 function ContactPage() {
     return (
         <>
-            <section className="container d-flex">
+            <section className="container d-flex px-4 py-2">
                 <div className="row col pt-10">
                     <h2>Masz uwagi do działania strony?</h2>
                     <h3 style={{color: "#50854e"}}>Skontaktuj się z nami</h3>

@@ -23,15 +23,16 @@ $rank-star-size: 1.8em;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
 @import "./scss/elements/navigations";
 @import "./scss/elements/footer";
 @import "./scss/elements/contact";
-@import "./scss/settings/variables";
 @import "./scss/elements/rank";
 @import "./scss/elements/home";
 @import "./scss/elements/about";
+@import "scss/elements/shelters";
 @import "./scss/elements/comments";
-@import "./scss/elements/shelters";
+
 
 
 

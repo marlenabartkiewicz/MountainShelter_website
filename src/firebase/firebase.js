@@ -84,11 +84,6 @@ class Firebase {
             date: Timestamp.fromDate(new Date())
         });
     };
-
-    // addSingleShelter = async (shelterID, shelterData) => {
-    //   console.log('[firebase] Call: <addSingleShelter> ')
-    //   await setDoc(doc(this.db, this.collections.shelters, shelterID),shelterData,);
-    // };
 }
 
 const firebaseInstance = new Firebase();

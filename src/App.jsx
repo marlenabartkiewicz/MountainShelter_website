@@ -1,8 +1,6 @@
 import {Route, Routes} from 'react-router-dom'
 
 import RootLayout from "./layouts/RootLayout.jsx";
-
-
 import SheltersPage from "./pages/SheltersPage.jsx";
 import NotFoundPage from "./pages/Error/NotFoundPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
@@ -23,15 +21,10 @@ const App = () => {
                         <Route index element={<SheltersPage/>}/>
                         <Route path=":shelterID" element={<ShelterPage/>}/>
                     </Route>
-                    <Route path="/rating">
-                        <Route index element={<SheltersPage/>}/>
-                        <Route path=":shelterID" element={<ShelterPage/>}/>
-                    </Route>
                     <Route path="/contact" element={<ContactPage/>}/>
                     <Route path="*" element={<NotFoundPage/>}/>
                 </Route>
             </Routes>
-
         </>
     )
 }

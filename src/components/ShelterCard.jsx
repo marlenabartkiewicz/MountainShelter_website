@@ -1,13 +1,12 @@
 import {Link} from "react-router-dom";
 
-
 function ShelterCard({shelterID, shelterData}) {
     return (
         <>
             <section className="shelter-container">
                 <div className="col">
                     <div className="card h-100">
-                        <div className="image-box overflow-hidden position-relative">
+                        <div className="image-box rounded position-relative">
                             <img src={shelterData.imageURL} className="card-img-top" alt="..."/>
                         </div>
                         <div className="card-body">
